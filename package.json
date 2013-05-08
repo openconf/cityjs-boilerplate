@@ -13,6 +13,6 @@
   "author": "",
   "license": "BSD",
   "components":{
-    "someTest":"componentjs/somstuff"
+    "store":"gitrepo"
   }
 }
