@@ -1,16 +1,14 @@
-require(['/assets/js/text.js!package.json', 'require'], function(pkg, req) {
+module = {exports:undefined};
+require(['/assets/js/text.js!require.cfg.json', 'require'], function(pkg, req) {
   var component,  pkgObj;
   var components = {};
 
   pkgObj = JSON.parse(pkg);
-  
-  for (component in pkgObj.components) {
-    components[component] = "components/" + component + "/index";
-  }
-  
+
   require.config({
     baseUrl: '/',
-    paths: components
+    paths: pkgObj.paths,
+    shim: pkgObj.shim
   });
   // start the app
   return req(['app']);

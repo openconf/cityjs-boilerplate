@@ -13,6 +13,6 @@
   "author": "",
   "license": "BSD",
   "components":{
-    "store":"gitrepo"
+    "component/jquery":"master"
   }
 }
