@@ -1,5 +1,5 @@
 module = {exports:undefined};
-require(['/assets/js/text.js!require.cfg.json', 'require'], function(pkg, req) {
+require(['/assets/js/text.js!.require.cfg.json', 'require'], function(pkg, req) {
   var component,  pkgObj;
   var components = {};
 
